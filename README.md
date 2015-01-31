@@ -1,5 +1,5 @@
 # Google Apps Script - GSA (Google Search Appliance) Proxy
-
+ 
 1. Create a new script in your [Google Drive](https://drive.google.com) account
 2. Create a new script file and copy the content of gsa-json-proxy.js inside.
 3. Setup GSA_URL with yours

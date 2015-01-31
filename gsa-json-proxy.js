@@ -1,5 +1,5 @@
 var GSA_URL = "url";
-
+ 
 //get remote GSA function
 function get(q, site, start, sitesearch){
   q = encodeURIComponent(q);
