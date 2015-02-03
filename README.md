@@ -36,3 +36,39 @@ Then you can request GSA JSON(P) in this way:
 			});
 		});
 
+Enabled Google Search Protocol input parameters:
+
+- query ("q" in google search protocol)
+- site (collection)
+- sitesearch ("as_sitesearch" in google search protocol)
+- getfields (for metadata retrieve)
+- partialfields (for metadata partial search)
+- requiredfields (for metadata exact search)
+- start (for pagination, default 0)
+- num (number de results to return, default 10)
+- client (GSA frontend to apply, default "default_frontend")
+
+Output schema:
+
+		{
+			q: "string",
+			site: "string",
+			as_sitesearch: "string",
+			getfields: "string",
+			requiredfields: "string",
+			partialfields: "string",
+			start: "number",
+			length: "number", //items in this response
+			total: "number", //total results of this query
+			items: [ //array of objects
+				{
+					url: "string",
+					encodedUrl: "string",
+					title: "string",
+					description: "string",
+					metatags: { //object
+						"string" : "string"
+					}
+				}
+			]
+		}	

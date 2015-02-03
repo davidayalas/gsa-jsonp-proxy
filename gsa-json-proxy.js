@@ -91,7 +91,9 @@ function doGet(e){
     "getfields" : e.parameters.getfields || "",
     "requiredfields" : e.parameters.requiredfields || "",
     "partialfields" : e.parameters.partialfields || "",
-    "start" : e.parameters.start || 0
+    "start" : e.parameters.start || 0,
+    "client" : e.parameters.client || "default_frontend",
+    "num" : e.parameters.num*1 || 10
   }
   
   var cb = e.parameters.callback ? e.parameters.callback + "(" : null;
